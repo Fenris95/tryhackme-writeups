@@ -76,11 +76,8 @@ After some poking around I found the management page at /content/as and logged i
 This exploit works by injecting PHP into an advert's HTML file from the admin portal. It also allows this PHP to be executed by going to the injected PHP file.
 I went to Pentestmonkey's reverse shell cheat sheet for the PHP reverse shell, and changed the IP and port.
 Instead of using the example in the exploit above, which created an alert box with PHP, I used:
-<html>
-<body>
+
 [exploit goes here]
-</body>
-</html>
 
 After searching in /content/inc (the same directory in which the mysql_backup file was found), I opened up the ads directory.
 Inside was the PHP file I had added.
