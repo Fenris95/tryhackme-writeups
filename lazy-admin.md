@@ -63,7 +63,9 @@ Navigating to http://10.10.57.236/inc/mysql_backup gives us a 404, however earli
 Navigating to http://10.10.57.236/content/inc/mysql_backup/ gives us mysql_backup_20191129023059-1.5.1.sql
 
 Opening this file we get the admin user: manager
+
 We also get an MD5 hash of the user's password: 42f749ade7f9e195bf475f37a44cafcb
+
 Using Crackstation we can find the user's password is: Password123
 
 After some poking around I found the management page at /content/as and logged in to the admin portal.
