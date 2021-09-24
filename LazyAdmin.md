@@ -47,6 +47,7 @@ http://10.10.57.236/server-status
 #### Visiting http://10.10.57.236/content/index.php we get:
 
 "Welcome to SweetRice" and a link to https://www.sweetrice.xyz/docs/5-things-need-to-be-done-when-SweetRice-installed/
+
 "SweetRice save all important file in the inc directory,there are two kinds of format ?:.txt (link.txt , htaccess.txt, lastest.txt) and .db"
 Note: Look around for .db file.
   
