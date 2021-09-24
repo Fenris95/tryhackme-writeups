@@ -25,14 +25,23 @@ dirb http://10.10.57.236 -R
 #### Found directories:
 
 http://10.10.57.236/content
+
   http://10.10.57.236/content/index.php
+  
   http://10.10.57.236/content/_themes
+  
   http://10.10.57.236/content/as/
+  
   http://10.10.57.236/content/attachment/
+  
   http://10.10.57.236/content/images/
+  
   http://10.10.57.236/content/inc/
+  
   http://10.10.57.236/content/js/
+  
 http://10.10.57.236/index.html
+
 http://10.10.57.236/server-status
 
 #### Visiting http://10.10.57.236/content/index.php we get:
