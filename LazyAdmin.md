@@ -1,17 +1,17 @@
-# https://tryhackme.com/room/lazyadmin
+## https://tryhackme.com/room/lazyadmin
 ## Title: LazyAdminFinal
 ### IP: 10.10.57.236
 
-Answer the questions below:
+###Answer the questions below:
 
-What is the user flag?
+###What is the user flag?
 Answer format: ***{********************************}
 
-What is the root flag?
+###What is the root flag?
 Answer format: ***{********************************}
 
 
-nmap:
+###nmap:
 22 open: SSH
 80 open: Apache 2.4.18
 
