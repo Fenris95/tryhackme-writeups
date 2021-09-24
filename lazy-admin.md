@@ -81,7 +81,9 @@ Instead of using the example in the exploit above, which created an alert box wi
 
 After searching in /content/inc (the same directory in which the mysql_backup file was found), I opened up the ads directory.
 Inside was the PHP file I had added.
-Before running the file I loaded up a netcat listener with:
+
+#### Before running the file I loaded up a netcat listener with:
+
 nc -lvnp 4444
 
 Once I clicked on the php file it started running and I gained a shell on the web server.
