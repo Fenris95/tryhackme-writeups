@@ -12,16 +12,18 @@ Answer format: ***{********************************}
 
 
 #### nmap:
+
 22 open: SSH
 80 open: Apache 2.4.18
 
 Navigating to 10.10.57.236:80 is just the default Apache page.
 
-Using dirb to recursively scan and locate any interesting directories or files:
+#### Using dirb to recursively scan and locate any interesting directories or files:
 
 dirb http://10.10.57.236 -R
 
-Found directories:
+#### Found directories:
+
 http://10.10.57.236/content
   http://10.10.57.236/content/index.php
   http://10.10.57.236/content/_themes
@@ -39,9 +41,9 @@ Visiting http://10.10.57.236/content/index.php we get:
 "SweetRice save all important file in the inc directory,there are two kinds of format ?:.txt (link.txt , htaccess.txt, lastest.txt) and .db"
 Note: Look around for .db file.
   
-Checking exploitDB for Sweetrice vulns:
+#### Checking exploitDB for Sweetrice vulns:
 
-Backup disclosure - php/webapps/40718.txt
+##### Backup disclosure - php/webapps/40718.txt
 "You can access to all mysql backup and download them from this directory: http://localhost/inc/mysql_backup"
 
 Navigating to http://10.10.57.236/inc/mysql_backup gives us a 404, however earlier we found the /content/inc/ directory, so maybe that'll work.
@@ -53,9 +55,10 @@ We also get an MD5 hash of the user's password: 42f749ade7f9e195bf475f37a44cafcb
 Using Crackstation we can find the user's password is: Password123
 
 After some poking around I found the management page at /content/as and logged in to the admin portal.
-On the Ads section of the admin portal we're able to create a new advert. Going back to exploitDB this was also listed:
 
-CSRF + PHP Code Exec - php/webapps/40700.html
+#### On the Ads section of the admin portal we're able to create a new advert. Going back to exploitDB this was also listed:
+
+##### CSRF + PHP Code Exec - php/webapps/40700.html
 This exploit works by injecting PHP into an advert's HTML file from the admin portal. It also allows this PHP to be executed by going to the injected PHP file.
 I went to Pentestmonkey's reverse shell cheat sheet for the PHP reverse shell, and changed the IP and port.
 Instead of using the example in the exploit above, which created an alert box with PHP, I used:
