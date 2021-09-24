@@ -14,6 +14,7 @@ Answer format: ***{********************************}
 #### Nmap:
 
 22 open: SSH
+
 80 open: Apache 2.4.18
 
 Navigating to 10.10.57.236:80 is just the default Apache page.
