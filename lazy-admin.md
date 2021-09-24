@@ -68,7 +68,7 @@ We also get an MD5 hash of the user's password:
 
 Using Crackstation we can find the user's password is:
 
-After some poking around I found the management page at /content/as and logged in to the admin portal.
+After navigating to each of the found directories I found the management page at /content/as and logged in to the admin portal.
 
 #### On the Ads section of the admin portal we're able to create a new advert. Going back to exploitDB this was also listed:
 
