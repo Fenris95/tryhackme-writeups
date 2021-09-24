@@ -50,9 +50,9 @@ http://10.10.57.236/server-status
 
 "SweetRice save all important file in the inc directory,there are two kinds of format ?:.txt (link.txt , htaccess.txt, lastest.txt) and .db"
 
-Note: Look around for .db file.
+#### Note: Look around for .db file.
   
-#### Checking exploitDB for Sweetrice vulns:
+#### Checking exploitDB for SweetRice vulns:
 
 #### Backup disclosure - php/webapps/40718.txt
 "You can access to all mysql backup and download them from this directory: http://localhost/inc/mysql_backup"
