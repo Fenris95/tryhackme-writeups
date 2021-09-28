@@ -60,7 +60,7 @@ FILENAME: /WEB-INF/web.xml
 
 RHOSTS: 10.10.50.24 (Target host)
 
-RPORT: 8080 (Apache Tomcat webserver port
+RPORT: 8080 (Apache Tomcat webserver port)
 
 SSL: false
 
