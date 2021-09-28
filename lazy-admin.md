@@ -10,7 +10,6 @@ Answer format: ***{********************************}
 #### What is the root flag?
 Answer format: ***{********************************}
 
-
 #### Nmap:
 
 22 open: SSH
