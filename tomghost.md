@@ -40,9 +40,9 @@ Nothing too interesting in these.
 
 #### Checking exploitDB for AJP vulns:
 
-#### AJP 'Ghostcat' File Read/Inclusion (Also in Metasploit)
+AJP 'Ghostcat' File Read/Inclusion (Also in Metasploit)
 
-#### Using Metasploit
+#### Using Metasploit:
 
 msfconsole
 
